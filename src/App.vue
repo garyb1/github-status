@@ -18,6 +18,7 @@
   </main>
   <footer v-show="components">
     <p :class="status.class">{{status.name}}</p>
+    <a href="https://github.com/garyb1/github-status">Visit Repository</a>
   </footer>
 </template>
 
@@ -138,12 +139,18 @@ span {
   }
 }
 
-footer p {
+footer {
   text-align: center;
-  margin: 1rem;
-  background: lightgray;
-  padding: 1em;
-  border-radius: 5px;
+  p {
+    margin: 1rem;
+    background: lightgray;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  a {
+    display: block;
+    color: currentColor;
+  }
 }
 
 .all_systems_operational {
